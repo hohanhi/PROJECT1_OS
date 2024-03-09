@@ -108,9 +108,7 @@ void VOLUME_NTFS::readIndexEntriesFromIndexAllocationAttribute(MFT_RECORD& mftRe
 		ReadSector(pos, byte, 1024);
 		IndexBlock idb;
 		readFile((char*)&idb, byte, sizeof IndexBlock);
-
 		readFile((char*)LIST_US, byte + idb.OffsetOfUS + 2, (idb.SizeOfUS - 1) * 2);
-
 		byte[_bytePerSec - 2] = LIST_US[US++];
 		byte[_bytePerSec - 1] = LIST_US[US++];
 

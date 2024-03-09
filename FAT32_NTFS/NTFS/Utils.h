@@ -10,7 +10,7 @@
 #include <Vector>
 #include <stack>
 #include <algorithm>
-#include <fcntl.h> //_O_WTEXT
+#include <fcntl.h>
 using namespace std;
 
 class VOLUME //volume interface
@@ -38,15 +38,3 @@ UINT32 HexToDec(string hexSector, bool mode = true);
 UINT StringToDec(BYTE[], int size, bool mode = true);
 string DataSizeFomat(UINT64 size);
 bool IsEquals(wstring str1, wstring str2);
-
-////Fat
-////CHeck Entry;
-//bool isDelete(BYTE[32]);
-//bool isFolder(BYTE[32]);
-//bool isFile(BYTE[32]);
-//bool isSUB_ENTRY(BYTE[32]);
-//bool isDot(BYTE[32]);
-//bool isHiddenEntry(BYTE[32]);
-//bool isVOLUME_ENTRY(BYTE[32]);
-////NTFS
-

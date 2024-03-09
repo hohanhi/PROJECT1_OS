@@ -1,0 +1,11 @@
+﻿  PartitionBootSector.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(43,2): warning C4091: 'typedef ': ignored on left of 'NTFSBootSector' when no variable is declared
+  (compiling source file 'PartitionBootSector.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(51,35): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  (compiling source file 'PartitionBootSector.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(54,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
+  (compiling source file 'PartitionBootSector.cpp')
+  
+  NTFS.vcxproj -> C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\x64\Debug\NTFS.exe

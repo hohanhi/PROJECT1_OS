@@ -1,7 +1,7 @@
 #pragma once
 #include "MFT.h"
 #pragma pack(push,1)
-typedef struct NTFSBootSector
+typedef struct PBS
 {
     // Jump Instruction
     BYTE        jmpBoot[3];
@@ -12,14 +12,14 @@ typedef struct NTFSBootSector
     // BIOS Parameter Block
     WORD        bytePerSec;
     BYTE        secPerClus;
-    BYTE        reserved[2];
+    BYTE        reservedSec[2];
     BYTE        zero0[3];
     BYTE        unused1[2];
     BYTE        media;
     BYTE        zero1[2];
     WORD        secPerTrack;
     WORD        headNum;
-    DWORD       HiddSec;
+    DWORD       HiddenSec;
     BYTE        unused2[8];
     LONGLONG    totalSec;
 
@@ -44,7 +44,7 @@ typedef struct NTFSBootSector
 
 class NTFSPBSector {
 private:
-	NTFSBootSector pbs;
+    PBS pbs;
 public:
 
 	void Read(BYTE[512]);

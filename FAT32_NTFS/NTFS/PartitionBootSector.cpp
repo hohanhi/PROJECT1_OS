@@ -6,9 +6,9 @@ void NTFSPBSector::Read(BYTE sec[512])
 }
 
 void NTFSPBSector::printBS() {
-    cout << "----------------------------------------------" << endl;
-    cout << "|       Partition Boot Sector NTFS           |" << endl;
-    cout << "----------------------------------------------" << endl;
+    cout << char(218) << string(40, char(196)) << char(191) << endl;
+    cout << char(179) << "      PARTITION BOOT SECTOR NTFS        " << char(179) << endl;
+    cout << char(192) << std::string(40, char(196)) << char(217) << endl;
 
     cout << "OEM Name: " << pbs.oemID << endl;
     cout << "Bytes Per Sector: " << pbs.bytePerSec << endl;
