@@ -1,0 +1,16 @@
+﻿  Component.cpp
+  FAT32.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(88,44): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(143,40): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(181,57): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(183,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(190,38): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(192,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(202,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(218,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(220,44): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\FAT32\FAT32.cpp(259,35): warning C4018: '<': signed/unsigned mismatch
+  Function.cpp
+  main.cpp
+  Generating Code...
+  FAT32.vcxproj -> C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\x64\Debug\FAT32.exe

@@ -5,7 +5,7 @@
 #define MTF0							(0)
 #define MTF1							(1)
 #define ROOT_FILE_NAME_INDEX			(5)
-//attribute of 1 entry				//TypeCode
+// attribute of 1 entry				//TypeCode
 #define $STANDARD_INFORMATION			(0x10)
 #define $FILE_NAME						(0x30)
 #define $DATA							(0x80)
@@ -15,7 +15,7 @@
 
 #define RESIDENT						0x00
 #define NON_RESIDENT					0x01
-////attribute of 1 file	
+// attribute of 1 file	
 #define	ATTR_FILENAME_FLAG_READONLY		0x00000001
 #define	ATTR_FILENAME_FLAG_HIDDEN		0x00000002
 #define	ATTR_FILENAME_FLAG_SYSTEM		0x00000004
@@ -32,7 +32,7 @@
 #define	INDEX_BLOCK_MAGIC		'XDNI'
 #define	FILE_RECORD_MAGIC		'ELIF'
 #pragma pack(push,1)
-//Header of MTF Emtry
+//Header of MTF Entry
 struct MFTEntryHeader
 {
 	DWORD       magic; //0x0 – 0x03 - Dau hieu nhan biet MFT entry

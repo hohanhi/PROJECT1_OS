@@ -1,9 +1,39 @@
-﻿  Utils.cpp
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(30,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(36,18): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(39,18): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(107,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(112,27): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(129,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(134,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+﻿  MFT.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\MFT.cpp(27,31): warning C4101: 'headAttr2': unreferenced local variable
+  PartitionBootSector.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(43,2): warning C4091: 'typedef ': ignored on left of 'PBS' when no variable is declared
+  (compiling source file 'PartitionBootSector.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(50,35): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  (compiling source file 'PartitionBootSector.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(53,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
+  (compiling source file 'PartitionBootSector.cpp')
+  
+  Volume.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(43,2): warning C4091: 'typedef ': ignored on left of 'PBS' when no variable is declared
+  (compiling source file 'Volume.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(50,35): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  (compiling source file 'Volume.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(53,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
+  (compiling source file 'Volume.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Volume.cpp(266,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Volume.cpp(351,39): warning C4309: 'argument': truncation of constant value
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Volume.cpp(356,39): warning C4309: 'argument': truncation of constant value
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Volume.cpp(369,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Volume.cpp(381,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(43,2): warning C4091: 'typedef ': ignored on left of 'PBS' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(50,35): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(53,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
+  (compiling source file 'main.cpp')
+  
+  Generating Code...
   NTFS.vcxproj -> C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\x64\Debug\NTFS.exe
