@@ -4,7 +4,7 @@ int main()
 {
     VOLUME* volume = nullptr;
     wchar_t driveName;
-    wstring FileName;
+    wstring FILENAME;
 
     InputVolume(volume, driveName);
     int choice = 0;
@@ -30,8 +30,8 @@ int main()
         case 5:
             wcin.ignore();
             cout << "Input entry name:";
-            getline(wcin, FileName);
-            volume->printEntryData(FileName);
+            getline(wcin, FILENAME);
+            volume->printEntryData(FILENAME);
             break;
         }
         system("pause");

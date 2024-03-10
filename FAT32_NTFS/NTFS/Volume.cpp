@@ -138,7 +138,7 @@ void VOLUME_NTFS::readIndexEntriesFromIndexAllocationAttribute(MFT_RECORD& mftRe
 				break;
 			}
 
-			FileName fName;
+			FILENAME fName;
 			fName.read(byte + pos2 + 16);
 
 			DWORD idex = _entryIndex.DataOffset;
@@ -170,7 +170,7 @@ void VOLUME_NTFS::readDirectoryTree(ENTRY* folder)
 	BYTE* byte = new BYTE[2048];
 	UINT64 pos = (_fstMTF * 512 + 1024 * folder->_entryIndex);
 	ENTRY* entry = nullptr;
-	FileName fName;
+	FILENAME fName;
 	ReadSector(pos, byte, 1024);
 
 	// Read entry in MFT record.
@@ -299,7 +299,7 @@ ENTRY::ENTRY(DWORD index)
 	_entryIndex = index;
 }
 
-void ENTRY::setFilename(FileName  Name)
+void ENTRY::setFilename(FILENAME  Name)
 {
 	this->_filename = Name;
 }

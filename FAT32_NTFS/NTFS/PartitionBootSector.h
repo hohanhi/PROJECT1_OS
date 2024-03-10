@@ -46,7 +46,6 @@ class NTFSPBSector {
 private:
     PBS pbs;
 public:
-
 	void Read(BYTE[512]);
 	DWORD getFstMTFSec() { return pbs.MFTClus; }
 	UINT16 getBytePerSec() { return pbs.bytePerSec; }

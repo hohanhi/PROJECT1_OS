@@ -10,7 +10,7 @@ void INDEX_ROOT_ATTRI::read(BYTE sec[])
 	{
 		MFTEntryIndex ie;
 		readFile((char*)&ie, sec + pos, 16);
-		FileName f;
+		FILENAME f;
 		f.read(sec + pos + 16);
 		BLOCKFILE block{ f,ie.DataOffset };
 		list.push_back(block);
@@ -131,17 +131,17 @@ MFT_RECORD::~MFT_RECORD()
 }
 
 
-vector <MFT_DATARUN> readDataRun(BYTE datarun[], int size)
+vector <MFTDatarun> readDataRun(BYTE datarun[], int size)
 {
 	int i = 0;
-	vector < MFT_DATARUN> list;
+	vector < MFTDatarun> list;
 	while (datarun[i] != 0x00)
 	{
 		int offset_len = datarun[i] >> 4;
 		int length_len = datarun[i] & 0xf;
 		ULONGLONG length = 0;
 		LONGLONG offset = 0;
-		MFT_DATARUN drun;
+		MFTDatarun drun;
 		readFile((char*)&length, datarun + i + 1, length_len);
 		readFile((char*)&offset, datarun + i + 1 + length_len, offset_len);
 		drun.length = length;
@@ -165,7 +165,7 @@ DATARUNLIST INDEX_ALLOC_ATTRI::getDataRunList()
 	return _list;
 }
 
-void FileName::read(BYTE sec[])
+void FILENAME::read(BYTE sec[])
 {
 	wchar_t* buffer = new wchar_t[256];
 	readFile((char*)&fName, sec, sizeof MFTFilenameAttribute);
@@ -181,12 +181,12 @@ void FileName::read(BYTE sec[])
 	}
 }
 
-ULONGLONG FileName::getSize()
+ULONGLONG FILENAME::getSize()
 {
 	return fName.DataSize;
 }
 
-string FileName::getAttribute() {
+string FILENAME::getAttribute() {
 	string buffer;
 	DWORD Attr = fName.FileAttributes;
 	if (Attr & ATTR_FILENAME_FLAG_READONLY)
@@ -204,12 +204,12 @@ string FileName::getAttribute() {
 	return buffer;
 }
 
-wstring FileName::getName()
+wstring FILENAME::getName()
 {
 	return entryName;
 }
 
-FileName FileName::clone()
+FILENAME FILENAME::clone()
 {
 	return *this;
 }

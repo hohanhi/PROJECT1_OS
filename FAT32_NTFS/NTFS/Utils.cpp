@@ -17,8 +17,6 @@ string ByteToString(BYTE byte[], int size)
         if( (int)byte[i]!=0)
             buffer += byte[i];
     }
-    cout << buffer << endl;
-    system("pause");
     return buffer;
 }
 

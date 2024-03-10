@@ -8,11 +8,11 @@ class ENTRY {
 public:
 	DWORD		_entryIndex;
 	DWORD		_sector;
-	FileName	_filename;
+	FILENAME	_filename;
 public:
 	ENTRY();
 	ENTRY(DWORD index);
-	virtual void setFilename(FileName Name);
+	virtual void setFilename(FILENAME Name);
 	virtual void addEntry(ENTRY* e) {}
 	virtual void printDirectoryTree(int x = 0) {};
 	virtual void printEntryInfo(int x = 0);

@@ -1,11 +1,9 @@
-﻿  PartitionBootSector.cpp
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(43,2): warning C4091: 'typedef ': ignored on left of 'NTFSBootSector' when no variable is declared
-  (compiling source file 'PartitionBootSector.cpp')
-  
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(51,35): warning C4244: 'return': conversion from 'LONGLONG' to 'DWORD', possible loss of data
-  (compiling source file 'PartitionBootSector.cpp')
-  
-C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\PartitionBootSector.h(54,40): warning C4244: 'return': conversion from 'double' to 'UINT16', possible loss of data
-  (compiling source file 'PartitionBootSector.cpp')
-  
+﻿  Utils.cpp
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(30,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(36,18): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(39,18): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(107,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(112,27): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(129,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\NTFS\Utils.cpp(134,26): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
   NTFS.vcxproj -> C:\Users\Admin\Desktop\PROJECT1_OS\FAT32_NTFS\x64\Debug\NTFS.exe

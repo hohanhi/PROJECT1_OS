@@ -88,7 +88,7 @@ struct MFTAttributeHeader
 	};
 };
 
-struct MFT_DATARUN
+struct MFTDatarun
 {
 	LONGLONG    offset;
 	ULONGLONG   length;
@@ -109,7 +109,6 @@ struct MFTStandardAttributeInformation
 	ULONGLONG	QuotaCharged;
 	ULONGLONG	USN;
 };
-
 
 struct MFTFilenameAttribute
 {
@@ -173,7 +172,7 @@ struct MFTEntryIndex
 				ULONGLONG FileReference;
 			} asKeys;
 		} reparse;
-		MFTFilenameAttribute FileName;
+		MFTFilenameAttribute FILENAME;
 	};
 };
 
@@ -195,9 +194,9 @@ struct IndexBlock
 };
 
 
-typedef vector <MFT_DATARUN> DATARUNLIST;
+typedef vector <MFTDatarun> DATARUNLIST;
 
-class FileName {
+class FILENAME {
 public:
 	MFTFilenameAttribute fName;
 	wstring entryName;
@@ -210,7 +209,7 @@ public:
 	string getAccessTime(){		return DecToDateTime(fName.AccessTime);}
 	string getAttribute();
 	wstring getName();
-	FileName clone();
+	FILENAME clone();
 };
 
 class ATTRIBUTE {
@@ -220,29 +219,26 @@ public:
 	virtual void read(BYTE[]){}
 };
 
-class STANDARD_INFO_ATTRI :public ATTRIBUTE {
+class STANDARD_ATTR_INFO :public ATTRIBUTE {
 private:
 	MFTStandardAttributeInformation standInfo;
 public:
 	void read(BYTE sec[]) {
-
 		readFile((char*)&headAttr, sec, sizeof(MFTAttributeHeader));
-		readFile((char*)&standInfo, sec+ 24, 48);
+		readFile((char*)&standInfo, sec + 24, 48);
 	}
 };
 
-class FILENAME_ATTRI :public ATTRIBUTE,public FileName{
-
+class FILENAME_ATTRI :public ATTRIBUTE,public FILENAME {
 public:
 	void read(BYTE sec[]) {
-
 		readFile((char*)&headAttr, sec, (24));
-		FileName::read(sec+24);
+		FILENAME::read(sec+24);
 	}
 };
 
 struct BLOCKFILE {
-	FileName fname;
+	FILENAME fname;
 	DWORD curIndex;
 };
 
